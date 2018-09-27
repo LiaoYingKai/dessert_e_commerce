@@ -12,7 +12,7 @@
     </div>
     <div class="rememberMe">
       <input type="checkbox" id="check">
-      <label for="check"></label> 記住我
+      <label for="check"> </label> 記住我
     </div>
     <div class="loginButton">
       登入帳號
@@ -72,15 +72,15 @@ export default {
         margin-left: 30px;
         input[type="checkbox"] {
             display: none;
-            &:checked ~label {
-                background-color: red;
+            &:checked ~label::after {
+                content: '\2611';
             }
         }
         label {
-            width: 16px;
-            height: 16px;
-            display: inline-block;
-            background-color: #fff;
+            &::after {
+                font-size: 18px;
+                content: '\2610';
+            }
         }
     }
     .loginButton {
