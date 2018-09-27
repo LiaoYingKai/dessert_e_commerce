@@ -11,7 +11,8 @@
       <input type="text" placeholder="請輸入使用者密碼">
     </div>
     <div class="rememberMe">
-      <input type="checkbox"> 記住我
+      <input type="checkbox" id="check">
+      <label for="check"></label> 記住我
     </div>
     <div class="loginButton">
       登入帳號
@@ -53,14 +54,41 @@ export default {
         padding: 40px 0;
         text-align: center;
     }
-    .account {}
-    .password {}
-    .rememberMe {}
+    .account {
+        input[type="text"] {
+            background-image: url("../../static/image/baseline-person-24px.svg");
+            @include inputStyle;
+        }
+    }
+    .password {
+        input[type="text"] {
+            background-image: url("../../static/image/baseline-vpn_key-24px.svg");
+            @include inputStyle;
+        }
+    }
+    .rememberMe {
+        font-size: 16px;
+        align-self: flex-start;
+        margin-left: 30px;
+        input[type="checkbox"] {
+            display: none;
+            &:checked ~label {
+                background-color: red;
+            }
+        }
+        label {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-color: #fff;
+        }
+    }
     .loginButton {
         width: 100%;
         padding: 16px 0;
         background-color: #FFE180;
         text-align: center;
+        cursor: pointer;
     }
 }
 .thirdPartyLogin {
@@ -74,6 +102,8 @@ export default {
         text-align: center;
         background-color: #FFFFFF;
         color: #8DA291;
+        cursor: pointer;
+
     }
 }
 </style>
