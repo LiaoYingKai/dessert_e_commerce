@@ -7,19 +7,19 @@
       <div class="title">
         甜點類別
       </div>
-      <div class="kind" v-for="item in kind">
+      <div class="kind" v-for="item in kind" :key='item'>
         {{item}}
       </div>
     </div>
     <div class="list">
-      <Product v-for="item in 6" class="productBlank"></Product>
+      <Product v-for="item in 6" class="productBlank" :key='item'></Product>
     </div>
   </div>
   <div class="pageNumber">
     <div class="numberStyle">
       <img src="static/image/baseline-arrow_left-24px.svg" alt="">
     </div>
-    <div class="numberStyle" v-for="item in 3">
+    <div class="numberStyle" v-for="item in 3" :key='item'>
       {{item}}
     </div>
     <div class="numberStyle">
@@ -33,13 +33,13 @@
 import Product from '@/components/Product'
 export default {
   components: {
-    Product,
+    Product
   },
   data() {
     return {
       kind: ['所有甜點', '本日精選', '人氣推薦', '新品上市']
     }
-  },
+  }
 }
 </script>
 

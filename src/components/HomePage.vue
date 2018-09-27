@@ -29,7 +29,7 @@
     <img src="static/image/lg-想吃甜點是不需要理由的.svg" alt="" class="title">
   </div>
   <div class="productList">
-    <Product v-for="item in 3">
+    <Product v-for="item in 3" :key='item'>
     </Product>
   </div>
 </div>

@@ -22,7 +22,7 @@
     <div class="title">
       <span>——</span> 連結社群帳號 <span>——</span>
     </div>
-    <div class="thirdPart" v-for="item in thirdParts">
+    <div class="thirdPart" v-for="item in thirdParts" :key='item'>
       {{item}}
     </div>
   </div>
