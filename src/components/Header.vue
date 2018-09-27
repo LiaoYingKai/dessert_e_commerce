@@ -35,6 +35,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import 'mixin';
 .header {
     width: 100%;
     box-sizing: border-box;
@@ -57,10 +58,8 @@ ul {
     li {
         margin-left: 60px;
         a {
-            font-size: 16px;
-            font-family: sans-serif;
-            color: #3F5D45;
             text-decoration: none;
+            @include pStyle(#3F5D45,16px);
         }
     }
 }

@@ -36,7 +36,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import 'minix';
+@import 'mixin';
 .footer {
     width: 100%;
 }
@@ -52,10 +52,7 @@ export default {}
 
     }
     span {
-        font-size: 24px;
-        font-family: sans-serif;
-        margin: 0;
-        color: #EAF0ED;
+        @include pStyle(#EAF0ED,24px);
     }
     .goEmail {
         width: 380px;
@@ -94,7 +91,7 @@ export default {}
         height: auto;
     }
     p {
-        @include pStyle;
+        @include pStyle(#3F5D45,16px);
     }
 }
 .footerCompanyWebInfo {
@@ -109,7 +106,7 @@ export default {}
 }
 .footerSlogan {
     span {
-        @include pStyle;
+        @include pStyle(#3F5D45,16px);
     }
     &::before {
         content: '';

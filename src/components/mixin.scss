@@ -1,0 +1,6 @@
+@mixin pStyle($color,$size) {
+  margin: 0;
+  font-size: $size;
+  font-family: sans-serif;
+  color: $color;
+}

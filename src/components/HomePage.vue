@@ -28,11 +28,20 @@
   <div class="slogan">
     <img src="static/image/lg-想吃甜點是不需要理由的.svg" alt="" class="title">
   </div>
+  <div class="productList">
+    <div class="" v-for="item in 3">
+      <Product/>
+    </div>
+  </div>
 </div>
 </template>
 
 <script>
+import Product from '@/components/Product'
 export default {
+  components: {
+    Product
+  },
   data() {
     return {
       filterBar: ['本日精選', '人氣推薦', '新品上市']
@@ -110,5 +119,10 @@ export default {
         width: 90px;
         height: auto;
     }
+}
+.productList {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 </style>
