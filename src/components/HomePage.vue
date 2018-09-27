@@ -29,9 +29,8 @@
     <img src="static/image/lg-想吃甜點是不需要理由的.svg" alt="" class="title">
   </div>
   <div class="productList">
-    <div class="" v-for="item in 3">
-      <Product/>
-    </div>
+    <Product v-for="item in 3">
+    </Product>
   </div>
 </div>
 </template>
@@ -51,15 +50,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import 'mixin';
 .homePage {
     padding: 0 42px;
 }
 .banner {
-    width: 100%;
-    height: 490px;
-    background-size: cover;
+    @include bannerStyle;
     background-image: url("../../static/image/banner1.jpg");
-    background-position: center center;
 }
 .filterBar {
     display: flex;
@@ -72,9 +69,7 @@ export default {
         opacity: 0.8;
         -webkit-writing-mode: vertical-lr;
         padding: 60px 110px;
-        font-size: 24px;
-        font-family: sans-serif;
-        color: #fff;
+        @include pStyle(#fff,24px);
         line-height: 1;
         &:hover {
             color: #3F5D45;

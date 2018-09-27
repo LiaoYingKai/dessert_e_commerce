@@ -11,7 +11,7 @@
         </router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'Products', params: {} }">
+        <router-link :to="{ name: 'DessertPage', params: {} }">
           甜點
         </router-link>
       </li>

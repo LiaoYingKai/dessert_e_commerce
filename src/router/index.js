@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/components/HomePage'
-import Products from '@/components/Products'
+import DessertPage from '@/components/DessertPage'
 import Login from '@/components/Login'
 import ShoppingCart from '@/components/ShoppingCart'
 
@@ -13,9 +13,9 @@ export default new Router({
     name: 'HomePage',
     component: HomePage
   }, {
-    path: '/Products',
-    name: 'Products',
-    component: Products
+    path: '/DessertPage',
+    name: 'DessertPage',
+    component: DessertPage
   }, {
     path: '/Login',
     name: 'Login',
