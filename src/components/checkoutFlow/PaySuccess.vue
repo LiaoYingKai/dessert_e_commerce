@@ -13,11 +13,11 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import 'mixin';
+@import '../mixin';
 
 .paySuccess {
     @include bannerStyle;
-    background-image: url("../../static/image/paySuccess.jpg");
+    background-image: url("../../../static/image/paySuccess.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;

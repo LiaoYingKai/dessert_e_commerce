@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'mixin';
+@import '../mixin';
 .orderSummery {
     width: 300px;
     background-color: #3F5D45;

@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'mixin';
+@import '../mixin';
 .yourShoppingCart {
     width: 620px;
 }

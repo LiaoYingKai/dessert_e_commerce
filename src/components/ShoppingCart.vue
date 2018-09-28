@@ -1,23 +1,32 @@
 <template>
 <div class="shoppingCart">
   <div class="typesetting">
-    <YourShoppingCart/>
-    <OrderSummery/>
+    <!-- <YourShoppingCart/> -->
+    <Transport/>
+    <div class="ShoppingInfoTag">
+      <!-- <OrderSummery /> -->
+      <ShoppingTag/>
+    </div>
   </div>
   <!-- <PaySuccess /> -->
 </div>
 </template>
 
 <script>
-import PaySuccess from '@/components/PaySuccess'
-import YourShoppingCart from '@/components/YourShoppingCart'
-import OrderSummery from '@/components/OrderSummery'
+import PaySuccess from '@/components/checkoutFlow/PaySuccess'
+import YourShoppingCart from '@/components/checkoutFlow/YourShoppingCart'
+import OrderSummery from '@/components/checkoutFlow/OrderSummery'
+import Transport from '@/components/checkoutFlow/Transport'
+import ShoppingTag from '@/components/checkoutFlow/ShoppingTag'
+
 
 export default {
   components: {
     PaySuccess,
     YourShoppingCart,
-    OrderSummery
+    OrderSummery,
+    Transport,
+    ShoppingTag
   }
 }
 </script>
@@ -28,7 +37,10 @@ export default {
 }
 .typesetting {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+}
+.ShoppingInfoTag {
+    margin-left: 20px;
 }
 </style>
