@@ -47,9 +47,7 @@ export default {}
     width: 460px;
 }
 .content {
-    padding: 30px 40px;
-    background-color: #3F5D45;
-    @include pStyle(#EAF0ED,20px);
+    @include payContentStyle();
 }
 .title {
     font-size: 36px;
@@ -68,14 +66,7 @@ export default {}
 }
 
 input {
-    width: 100%;
-    padding: 17px 0 17px 20px;
-    font-size: 16px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    &::placeholder {
-        color: #8DA291;
-    }
+    @include inputStyle();
 }
 
 .area,
@@ -88,10 +79,6 @@ input {
 }
 
 .nextButton {
-    @include pStyle(#3F5D45,24px);
-    background-color: #FFE180;
-    text-align: center;
-    padding: 16px 0;
-    width: 100%;
+    @include nextButtonStyle();
 }
 </style>

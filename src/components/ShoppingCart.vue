@@ -2,7 +2,9 @@
 <div class="shoppingCart">
   <div class="typesetting">
     <!-- <YourShoppingCart/> -->
-    <Transport/>
+    <!-- <Transport/> -->
+    <!-- <PayInfo/> -->
+    <Invoice/>
     <div class="ShoppingInfoTag">
       <!-- <OrderSummery /> -->
       <ShoppingTag/>
@@ -18,7 +20,8 @@ import YourShoppingCart from '@/components/checkoutFlow/YourShoppingCart'
 import OrderSummery from '@/components/checkoutFlow/OrderSummery'
 import Transport from '@/components/checkoutFlow/Transport'
 import ShoppingTag from '@/components/checkoutFlow/ShoppingTag'
-
+import PayInfo from '@/components/checkoutFlow/PayInfo'
+import Invoice from '@/components/checkoutFlow/Invoice'
 
 export default {
   components: {
@@ -26,7 +29,9 @@ export default {
     YourShoppingCart,
     OrderSummery,
     Transport,
-    ShoppingTag
+    ShoppingTag,
+    PayInfo,
+    Invoice
   }
 }
 </script>
