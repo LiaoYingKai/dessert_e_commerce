@@ -1,7 +1,6 @@
 # dessert_e_commerce
 
-> A Vue.js project
-
+> 這是一個使用前端修煉精神時光屋(The F2E)的切版練習，加上使用vue將流程串起來(使用假資料做流程)
 ## Build Setup
 
 ``` bash
@@ -17,5 +16,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
